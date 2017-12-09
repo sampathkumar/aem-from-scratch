@@ -1,0 +1,12 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>aem.from.scratch.groupid</groupId>
+    <artifactId>aem.from.scratch.artifactid</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>aem.from.scratch.artifactid.core</artifactId>
+  <description>aem.from.scratch.artifactname</description>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+</project>

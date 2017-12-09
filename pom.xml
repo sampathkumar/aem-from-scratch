@@ -5,4 +5,24 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <description>aem.from.scratch.description</description>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.felix</groupId>
+          <artifactId>maven-bundle-plugin</artifactId>
+          <version>3.3.0</version>
+        </plugin>
+        <plugin>
+          <groupId>com.day.jcr.vault</groupId>
+          <artifactId>content-package-maven-plugin</artifactId>
+          <version>0.0.24</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  <modules>
+    <module>aem-from-scratch-core</module>
+    <module>aem-from-scratch-apps</module>
+  </modules>
 </project>

@@ -9,12 +9,35 @@
   <description>aem.from.scratch.description.apps</description>
   <version>1.0-SNAPSHOT</version>
   <packaging>content-package</packaging>
+  <dependencies>
+    <dependency>
+      <groupId>aem.from.scratch.groupid</groupId>
+      <artifactId>aem.from.scratch.artifactid.core</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
   <build>
+    <resources>
+      <!-- define the resources that will go into the package -->
+      <resource>
+        <directory>${basedir}/src/main/content/jcr_root</directory>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
           <groupId>com.day.jcr.vault</groupId>
           <artifactId>content-package-maven-plugin</artifactId>
           <extensions>true</extensions>
+          <configuration>
+              <failOnMissingEmbed>true</failOnMissingEmbed>
+              <embeddeds>
+                  <embedded>
+                      <groupId>aem.from.scratch.groupid</groupId>
+                      <artifactId>aem.from.scratch.artifactid.core</artifactId>
+                      <target>/apps/learn.aem.apps.scratch/install</target>
+                  </embedded>
+              </embeddeds>
+          </configuration>
       </plugin>
     </plugins>
   </build>

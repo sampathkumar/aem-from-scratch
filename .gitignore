@@ -1,2 +1,4 @@
 aem-from-scratch-apps/target
 aem-from-scratch-core/target
+.project
+.settings/

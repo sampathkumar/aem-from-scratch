@@ -1,4 +1,5 @@
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>aem.from.scratch.groupid</groupId>
@@ -7,8 +8,11 @@
   </parent>
   <artifactId>aem.from.scratch.artifactid.apps</artifactId>
   <description>aem.from.scratch.description.apps</description>
-  <version>1.0-SNAPSHOT</version>
   <packaging>content-package</packaging>
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>aem.from.scratch.groupid</groupId>
@@ -25,19 +29,19 @@
     </resources>
     <plugins>
       <plugin>
-          <groupId>com.day.jcr.vault</groupId>
-          <artifactId>content-package-maven-plugin</artifactId>
-          <extensions>true</extensions>
-          <configuration>
-              <failOnMissingEmbed>true</failOnMissingEmbed>
-              <embeddeds>
-                  <embedded>
-                      <groupId>aem.from.scratch.groupid</groupId>
-                      <artifactId>aem.from.scratch.artifactid.core</artifactId>
-                      <target>/apps/learn.aem.apps.scratch/install</target>
-                  </embedded>
-              </embeddeds>
-          </configuration>
+        <groupId>com.day.jcr.vault</groupId>
+        <artifactId>content-package-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <failOnMissingEmbed>true</failOnMissingEmbed>
+          <embeddeds>
+            <embedded>
+              <groupId>aem.from.scratch.groupid</groupId>
+              <artifactId>aem.from.scratch.artifactid.core</artifactId>
+              <target>/apps/learn.aem.apps.scratch/install</target>
+            </embedded>
+          </embeddeds>
+        </configuration>
       </plugin>
     </plugins>
   </build>

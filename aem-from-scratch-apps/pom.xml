@@ -38,7 +38,7 @@
             <embedded>
               <groupId>aem.from.scratch.groupid</groupId>
               <artifactId>aem.from.scratch.artifactid.core</artifactId>
-              <target>/apps/learn.aem.apps.scratch/install</target>
+              <target>/apps/aem.from.scratch/install</target>
             </embedded>
           </embeddeds>
         </configuration>

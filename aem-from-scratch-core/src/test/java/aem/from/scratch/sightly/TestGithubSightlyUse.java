@@ -21,4 +21,11 @@ public class TestGithubSightlyUse {
         Assert.assertNotNull(githubRepositories);
     }
 
+    @Test
+    public void testGetRepositoriesContainsTenRepos() {
+        List<String> githubRepositories = githubSightlyUseUnderTest.getRepositories();
+        Assert.assertNotNull(githubRepositories);
+        Assert.assertEquals(10, githubRepositories.size());
+    }
+
 }

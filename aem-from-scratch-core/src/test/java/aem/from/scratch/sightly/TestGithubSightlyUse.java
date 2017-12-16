@@ -1,5 +1,7 @@
 package aem.from.scratch.sightly;
 
+import java.util.List;
+
 import org.junit.Test;
 
 public class TestGithubSightlyUse {
@@ -8,7 +10,7 @@ public class TestGithubSightlyUse {
 
     @Test
     public void testGetRepositories() {
-        githubSightlyUseUnderTest.getRepositories();
+        List<String> githubRepositories = githubSightlyUseUnderTest.getRepositories();
     }
 
 }

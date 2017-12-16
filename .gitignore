@@ -1,4 +1,13 @@
-aem-from-scratch-apps/target
-aem-from-scratch-core/target
 .project
 .settings/
+
+aem-from-scratch-apps/.classpath
+aem-from-scratch-apps/.project
+aem-from-scratch-apps/.settings
+aem-from-scratch-apps/target
+
+aem-from-scratch-core/.classpath
+aem-from-scratch-core/.project
+aem-from-scratch-core/.settings
+aem-from-scratch-core/target
+

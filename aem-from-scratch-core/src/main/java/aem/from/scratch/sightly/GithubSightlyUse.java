@@ -5,8 +5,8 @@ import java.util.List;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
-@Component
-public class GithubSightlyUse {
+@Component(service = IGithubSightlyUse.class, immediate = true)
+public class GithubSightlyUse implements IGithubSightlyUse {
 
     @Reference
     private IGithubRepoFetcher repoFetcher;

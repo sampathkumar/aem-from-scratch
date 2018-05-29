@@ -1,7 +1,9 @@
 This is github component.
 Using via osgi-service.
-<div data-sly-use.github="aem.from.scratch.sightly.IGithubSightlyUse">
-    <ul data-sly-list.repositories="${github.repositories}">
-      <li>${repositories}</li>
-    </ul>
+<div data-sly-test.edit=${!wcmmode.edit}>
+	<div data-sly-use.github="aem.from.scratch.sightly.IGithubSightlyUse">
+    	<ul data-sly-list.repositories="${github.repositories}">
+      	<li>${repositories}</li>
+	    </ul>
+	</div>
 </div>

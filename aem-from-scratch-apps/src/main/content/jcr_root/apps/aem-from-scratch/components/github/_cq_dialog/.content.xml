@@ -6,4 +6,16 @@
   xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
   jcr:primaryType="nt:unstructured"
   jcr:title="Properties"
-  sling:resourceType="cq/gui/components/authoring/dialog" />
+  sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="granite/ui/components/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <numberOfRepositories
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/numberfield"
+        fieldLabel="Number of Repositories"
+        name="./numberOfRepositories" />
+    </items>
+  </content>
+</jcr:root>
